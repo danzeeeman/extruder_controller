@@ -32,6 +32,8 @@ void loop() {
     }else if(incomingByte == 'f'){
         // Turn the Motor Off
       motorON = false;
+    }else if(incomingByte == '0'){
+      stepSpeed = 7;
     }else if(incomingByte == '1'){
       stepSpeed = 15;
     }else if(incomingByte == '2'){
@@ -47,9 +49,9 @@ void loop() {
     }else if(incomingByte == '7'){
       stepSpeed = 960;
     }else if(incomingByte == '8'){
-      stepSpeed = 1920;
+      stepSpeed = 1000;
     }else if(incomingByte == '9'){
-      stepSpeed = 3840;
+      stepSpeed = 2000;
     }
   }
   if(motorON == true){
